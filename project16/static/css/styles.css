@@ -1,0 +1,9 @@
+h1
+{
+    color: blue;
+    background-color: pink;
+}
+body
+{
+    background: linear-gradient(45deg,blue,red,orange,violet);
+}

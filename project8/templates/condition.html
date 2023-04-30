@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <!---
+        <h1>if condition</h1>
+        {% if a > 100 %}
+          <h2>inside if</h2>
+          <h2>{{a}}</h2>
+        {% endif %}
+        
+        <h1>if else condition</h1>
+        {% if a > b %}
+          <h2>inside if</h2>
+          <h2>{{a}}</h2>
+        {% else %}
+          <h2>inside else</h2>
+          <h2>{{b}}</h2>
+        {% endif %}
+        
+        <h1>if elif condition</h1>
+        {% if a > b %}
+          <h2>inside if</h2>
+          <h2>{{a}}</h2>
+        {% elif b > c %}
+          <h2>inside elif</h2>
+          <h2>{{b}}</h2>
+          {% else %}
+          <h2>inside else</h2>
+          <h2>{{c}}</h2>
+        {% endif %}
+        --->
+        <h1>nested if </h1>
+        {% if a > b %}
+          {% if a > c %}
+            <h2>inside inner if</h2>
+            <h2>{{a}}</h2>
+          {% else %}
+            <h2>inside else</h2>
+            <h2>{{c}}</h2>
+          {% endif %}
+        {% else %}
+          {% if b > c %}
+            <h2>inside if</h2>
+            <h2>{{b}}</h2>
+          {% else %}
+            <h2>inside else</h2>
+            <h2>{{c}}</h2>
+          {% endif %}
+        {% endif %}
+    </center>
+</body>
+</html>
